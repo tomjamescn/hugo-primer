@@ -16,7 +16,8 @@
       <a href="{{ .RelPermalink }}">
         <h3>{{ .Title }}</h3>
       </a>
-      <small>{{ .Permalink }}</small>
+      {{ partial "taxonomy.html" . }}
+      <!--<small>{{ .Permalink }}</small>-->
       {{ .Date.Format "2006-01-02" }}
     </div>
     {{ .Summary }}
